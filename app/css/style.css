@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+ul li {
+    list-style-position: inside;
+    margin-left: 16px;
+    margin-top: 3px;
+    padding: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+TABLE{
+	border-spacing:0; border-collapse:collapse;
+	width: 100%;
+	border:none;
+	padding:0; margin:0;
+}
+TD{
+	padding:0; margin:0; 
+	border:none;
+	vertical-align: top;
+}
+
+
+h1{
+	font-size:34px;
+	margin:10px 0; 
+}
+
+/*book_list*/
+	.book_list md-grid-list{
+		margin: 8px;
+	}
+	.book_list .gray {
+		background: #f5f5f5; 
+	}
+	.book_list .red {
+		background: #ff8a80; 
+	}
+	.book_list .green {
+		background: #b9f6ca; 
+	}
+	.book_list md-grid-tile {
+		transition: all 400ms ease-out 50ms; 
+		
+		
+	}
+	
+	.book_list .image{
+		
+		text-align:center;
+		
+		
+		
+		/*
+		*/
+		top:0;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+	}
+	.book_list .image .inner{
+		margin:0 auto;
+		height:270px;
+	}
+	/*
+	.book_list .image IMG{
+		margin:0 auto;
+	}
+	*/
+	
+/*END book_list*/
+
+/*item_page*/
+	.item_page{
+		
+	}
+	
+	.left_menu{
+		float:left;
+		max-width:250px;
+	}
+	.left_menu UL{
+		
+	}
+	.left_menu UL LI{
+		background-color: #f1f5f7;
+	}
+	.left_menu UL LI A{
+		display: block;
+		padding: 6px 0 6px 42px;
+		padding: 10px;
+		padding-left: 20px;
+		position: relative;
+		text-decoration: none;
+		color: #1d7ee4;
+	}
+	.left_menu UL LI:hover A,
+	.left_menu UL LI.selected A
+	{
+		background-color: #e5e5e5;
+	}
+	.left_menu UL LI.main A{
+		color:#000;
+		background-color: rgb(16, 108, 200);
+		color: rgba(255, 255, 255, 0.87);
+		padding: 10px;
+	}
+	.left_menu UL LI.error A{
+		color:#000;
+		background-color: #ff8a80;
+		padding: 10px;
+	}
+	
+	
+	
+	
+	.book_item{
+		margin-left:260px;
+	}
+	.book_item .content{
+		width: 100%; display: table;
+	}
+	
+	.book_item .main_info{
+		
+	}
+	.book_item .main_info:after{
+		clear: both;
+		content: "";
+		display: block;
+	}
+	.book_item .main_info .left{
+		float:left;
+		width:200px;
+		height:270px;
+	}
+	/*
+	.book_item .main_info .left .preloader,
+	*/
+	.preloader
+	{
+		background-color:#ccc;
+		width:200px;
+		height:270px;
+		/*
+		background-image: url(/img/preloader.gif);
+		*/
+		background-image: url(/img/preloader.gif);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	.preloader.not_found{
+		background-image: url(/img/no_image.png);
+	}
+	
+
+	
+
+	.book_item .main_info .right{
+		margin-left:205px;
+	}
+	.book_item .main_info .right UL{
+		
+	}
+	.book_item .main_info .right UL LI{
+		
+	}
+	.book_item .main_info .right UL LI .ch{
+		font-weight:bold;
+	}
+	
+	.book_item .main_info .right .options{
+		margin-top:20px;
+	}
+	.book_item .main_info .right .options .title{
+		font-weight:bold;
+		padding-left:30px;
+	}
+	.book_item .main_info .right .options UL LI .ch{
+		font-style: italic;
+	}
+	
+	.book_item .add_info{
+		margin-top:10px;
+	}
+	
+	.book_item .bundles{
+		margin-top:20px;
+	}
+	.book_item .bundles .title{
+		font-weight:bold;
+	}
+	
+	
+/* таблица для списков */
+	.o_table {
+		padding-top: 10px;
+		clear:both;
+		border-collapse: separate;
+		border-spacing: 1px;
+	}
+	TABLE.o_table TR.header TD{ /* заголовки таблицы */
+		padding: 6px 4px;
+		font-weight: bold;
+		white-space: nowrap;
+		background: #B3D4EC;
+		color: #333333;
+		background-color: #3475CD;
+		color: white;
+	}
+	TABLE.o_table TR:nth-child(2n) {
+		background-color: #F8F8F8;
+	} 
+	TABLE.o_table TR:nth-child(2n-1) {
+		background-color: #F0F0F0;
+	} 
+	TABLE.o_table TR:nth-child(2n):hover, 
+	TABLE.o_table TR:nth-child(2n-1):hover 
+	{
+		background-color: #C7E7F9;
+	}
+	.o_table TR TD {
+		padding: 6px;
+		vertical-align: top;
+		font-size:12px;
+	}
+/*END таблица для списков */
+	
+/*END item_page*/
+
+
+
+.page_error{
+	padding:10px;
+}
